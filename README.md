@@ -1,4 +1,4 @@
-Hello change 
+This is your 2020 Lakers Squad!
 
 # LakersRoster2k20
 
