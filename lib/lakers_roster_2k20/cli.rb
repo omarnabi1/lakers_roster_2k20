@@ -4,7 +4,7 @@ class LakersRoster2k20::CLI
     puts "\nWelcome! Pick a number to get to know your Lakers Players!\n"
     get_list_of_players
     show_list_of_players
-    #get_user_picked_player
+    get_user_picked_player
     #list_attributes_of_picked_player
   end
   
@@ -20,12 +20,18 @@ class LakersRoster2k20::CLI
   end
   
   def get_user_picked_player
-    chosen_player = gets.strip
-    if valid_input(chosen_player.to_i, @players)
-    end
+    chosen_player = gets.strip.to_i
+    show_attributes_for(chosen_player) if valid_input(chosen_player.to_i, @players)
   end
+
   
   def valid_input(input, data)
-    input.to_i <= data.lenght && input < 0  
+    input.to_i <= data.length && input.to_i > 0 
+  end
+  
+  def show_attributes_for(chosen_player)
+    player = @players[chosen_player - 1]
+    puts "Here is more about your favorite Laker, #{player}"
+  end
   
 end
