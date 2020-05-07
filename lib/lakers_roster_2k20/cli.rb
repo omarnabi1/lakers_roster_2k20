@@ -17,7 +17,7 @@ class LakersRoster2k20::CLI
   
   
   def show_list_of_players
-    puts "\nChoose a number to lear more about player\n"
+    puts "\nChoose a number to learn more about player\n"
     @players.each.with_index do  |player, index|
       puts "#{index + 1}.#{player.name}"
     end
