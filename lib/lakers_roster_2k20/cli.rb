@@ -9,8 +9,12 @@ class LakersRoster2k20::CLI
   end
   
   def get_list_of_players
-    @players = ['Kostas Antetokounmpo', 'Avery Bradley', 'Devontae Cacok', 'Kentavious Caldwell-Pope', 'Alex Caruso', 'Quinn Cook', 'Anthony Davis', 'Jared Dudley', 'Danny Green', 'Talen Horton-Tucker', 'Dwight Howard', 'LeBron James', 'Kyle Kuzma', 'Javale McGee', 'Markieff Morris', 'Rajon Rondo', 'Dion Waiters']
+    @players = LakersRoster2k20::Player.all 
   end
+  
+  
+    #['Kostas Antetokounmpo', 'Avery Bradley', 'Devontae Cacok', 'Kentavious Caldwell-Pope', 'Alex Caruso', 'Quinn Cook', 'Anthony Davis', 'Jared Dudley', 'Danny Green', 'Talen Horton-Tucker', 'Dwight Howard', 'LeBron James', 'Kyle Kuzma', 'Javale McGee', 'Markieff Morris', 'Rajon Rondo', 'Dion Waiters']
+  
   
   def show_list_of_players
     puts "\nChoose a number to lear more about player\n"
