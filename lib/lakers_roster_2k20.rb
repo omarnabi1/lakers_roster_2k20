@@ -1,9 +1,11 @@
 require_relative "./lakers_roster_2k20/version"
 require_relative "./lakers_roster_2k20/cli"
 require_relative "./lakers_roster_2k20/player"
+require_relative "./lakers_roster_2k20/scraper"
 
 
 require 'pry'
+require 'nokogiri'
 
 
 module LakersRoster2k20

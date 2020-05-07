@@ -19,7 +19,7 @@ class LakersRoster2k20::CLI
   def show_list_of_players
     puts "\nChoose a number to lear more about player\n"
     @players.each.with_index do  |player, index|
-      puts "#{index + 1}.#{player}"
+      puts "#{index + 1}.#{player.name}"
     end
   end
   
@@ -35,7 +35,7 @@ class LakersRoster2k20::CLI
   
   def show_attributes_for(chosen_player)
     player = @players[chosen_player - 1]
-    puts "Here is more about your favorite Laker, #{player}"
+    puts "Here is more about your favorite Laker, #{player.name}"
   end
   
 end
