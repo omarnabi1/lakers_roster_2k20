@@ -6,6 +6,7 @@ require_relative "./lakers_roster_2k20/scraper"
 
 require 'pry'
 require 'nokogiri'
+require 'open-uri'
 
 
 module LakersRoster2k20

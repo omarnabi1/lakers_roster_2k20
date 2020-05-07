@@ -9,6 +9,7 @@ attr_accessor :name
   end
   
   def self.all 
+  LakersRoster2k20::Scraper.scrape_players if @@all.empty?
   @@all 
   end
   
