@@ -1,9 +1,8 @@
 class LakersRoster2k20::Player
 @@all = []
-
 attr_accessor :name 
 
-  def initialize 
+  def initialize(name) 
     @name = name 
     save
   end
@@ -16,9 +15,4 @@ attr_accessor :name
   def save
     @@all << self
   end
-
-
-
-
-
 end
