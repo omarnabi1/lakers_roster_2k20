@@ -4,8 +4,8 @@ class LakersRoster2k20::Scraper
 
     players = roster.css("tr.Table__TR.Table__TR--lg.Table__even a.AnchorLink")
     
-    players.each do |r|
-      puts r.text
+    players.each do |p|
+      puts p.text
       LakersRoster2k20::Player.new(name)
     end
   end
