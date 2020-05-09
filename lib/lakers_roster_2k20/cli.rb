@@ -2,8 +2,8 @@ class LakersRoster2k20::CLI
   
    def call 
     puts "\nWelcome! Pick a number to get to know your Lakers Players!\n"
-    get_list_of_players
-    show_list_of_players
+    get_roster
+    show_roster
     get_user_picked_player
     #list_attributes_of_picked_player
   end
