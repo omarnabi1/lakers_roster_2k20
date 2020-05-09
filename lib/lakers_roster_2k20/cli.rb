@@ -11,7 +11,7 @@ class LakersRoster2k20::CLI
   end
 
   def show_roster
-    puts "\nChoose a number to learn more about player\n"
+    puts "\nChoose a number to learn more about player. Why is the roster now showing up\n"
     @players.each.with_index(1) do  |player, index|
       puts "#{index}.#{player.name}"
     end
