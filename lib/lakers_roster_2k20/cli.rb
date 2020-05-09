@@ -8,7 +8,7 @@ class LakersRoster2k20::CLI
     #list_attributes_of_picked_player
   end
   
-  def get_list_of_players
+  def get_roster
     @players = LakersRoster2k20::Player.all 
   end
   
@@ -16,7 +16,7 @@ class LakersRoster2k20::CLI
     #['Kostas Antetokounmpo', 'Avery Bradley', 'Devontae Cacok', 'Kentavious Caldwell-Pope', 'Alex Caruso', 'Quinn Cook', 'Anthony Davis', 'Jared Dudley', 'Danny Green', 'Talen Horton-Tucker', 'Dwight Howard', 'LeBron James', 'Kyle Kuzma', 'Javale McGee', 'Markieff Morris', 'Rajon Rondo', 'Dion Waiters']
   
   
-  def show_list_of_players
+  def show_roster
     puts "\nChoose a number to learn more about player\n"
     @players.each.with_index do  |player, index|
       puts "#{index + 1}.#{player.name}"
