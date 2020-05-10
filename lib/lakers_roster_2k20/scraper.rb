@@ -1,11 +1,11 @@
 class LakersRoster2k20::Scraper
   def self.scrape_players
-    roster = Nokogiri::HTML(open("https://www.espn.com/nba/team/roster/_/name/lal/los-angeles-lakers"))
+    roster = Nokogiri::HTML(open("https://lakersnation.com/los-angeles-lakers-roster/"))
 
-    players = roster.css("tr.Table__TR.Table__TR--lg.Table__even a.AnchorLink")
+    players = roster.css("td.column-2")
     
     players.each do |p|
-      puts p.text
+      name = p.text
       LakersRoster2k20::Player.new(name)
     end
   end
