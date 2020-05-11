@@ -4,7 +4,7 @@ attr_accessor :name, :events
 
   def initialize(name) 
     @name = name 
-    @bio = []
+    @bio = [ ]
     save
   end
   
@@ -13,12 +13,10 @@ attr_accessor :name, :events
    @@all 
   end
   
-  def bio
-    LakersRoster2k20::Scraper.scrape_bio(self) if @@bio.empty?
-    @bio 
+  def get_bio
+    LakersRoster2k20::Scraper.scrape_bio(self) if @bio.empty?
   end
     
-  
   def save
     @@all << self
   end

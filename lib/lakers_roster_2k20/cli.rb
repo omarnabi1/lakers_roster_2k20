@@ -28,8 +28,11 @@ class LakersRoster2k20::CLI
   
   def show_bio_for(chosen_player)
     player = @players[chosen_player - 1]
-    bio = player.bio 
+    player.get_bio 
     puts "Here is more about your favorite Laker, #{player.name}!"
+    player.bio.each.with_index(1) do |bio, index|
+      puts "#{idx}. "#{bio.name}"
+    end
   end
 end
 
