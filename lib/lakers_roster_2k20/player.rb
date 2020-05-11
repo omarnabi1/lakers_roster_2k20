@@ -1,6 +1,6 @@
 class LakersRoster2k20::Player
-@@all = []
 attr_accessor :name, :events
+@@all = []
 
   def initialize(name) 
     @name = name 
@@ -14,7 +14,6 @@ attr_accessor :name, :events
   end
   
   def bio
-    binding.pry
     LakersRoster2k20::Scraper.scrape_bio(self) if @@bio.empty?
     @bio 
   end
