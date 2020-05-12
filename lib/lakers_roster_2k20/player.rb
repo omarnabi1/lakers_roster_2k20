@@ -1,10 +1,11 @@
 class LakersRoster2k20::Player
-attr_accessor :name, :events
+attr_accessor :name, :events, :ref 
 @@all = []
 
   def initialize(name) 
     @name = name 
-    @bio = [ ]
+    @ref = ref 
+    @info = [ ]
     save
   end
   
@@ -13,10 +14,10 @@ attr_accessor :name, :events
    @@all 
   end
   
-  def get_bio
-    LakersRoster2k20::Scraper.scrape_bio(self) if @bio.empty?
+  def get_info
+    LakersRoster2k20::Scraper.scrape_info(self) if @info.empty?
   end
-    
+  
   def save
     @@all << self
   end
