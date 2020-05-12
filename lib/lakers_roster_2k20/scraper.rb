@@ -10,9 +10,9 @@ class LakersRoster2k20::Scraper
     end
   end
   
-  def self.scrape_bio(player)
-      LakersRoster2k20::Bio.new("Number xx", player)
-      LakersRoster2k20::Bio.new("College xx", player)
+  def self.scrape_info(player)
+      LakersRoster2k20::Info.new("Number xx", player)
+      LakersRoster2k20::Info.new("College xx", player)
   end
 end
 
