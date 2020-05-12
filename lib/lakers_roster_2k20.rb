@@ -2,7 +2,7 @@ require_relative "./lakers_roster_2k20/version"
 require_relative "./lakers_roster_2k20/cli"
 require_relative "./lakers_roster_2k20/player"
 require_relative "./lakers_roster_2k20/scraper"
-require_relative "./lakers_roster_2k20/bio"
+require_relative "./lakers_roster_2k20/info"
 
 
 require 'pry'

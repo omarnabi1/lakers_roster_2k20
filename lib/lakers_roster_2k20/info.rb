@@ -24,7 +24,7 @@ attr_accessor :jersey_number, :position, :age, :height, :weight, :college_countr
     @player.info << self unless @player.info.include?(self)
   end
   
-  get info_details
+  def get_info_details
   #scraping website for jersey_number, position, age, height, weight, college_country
    LakersRoster2k20::Scraper.scrape_info(self) if jersey_number.empty?
  end
