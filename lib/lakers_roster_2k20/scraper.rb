@@ -11,14 +11,19 @@ class LakersRoster2k20::Scraper
   end
   
   def self.scrape_info(player)
-      LakersRoster2k20::Info.new("Number xx", player)
-      LakersRoster2k20::Info.new("College xx", player)
-  end
-end
+    doc = Nokogiri::HTML(open("https://lakersnation.com/los-angeles-lakers-roster/"))
+  
+      info = doc.css("tr.row-1")
+      
+      info.each do |i|
+        info_title = i.text
+      end
+    end
+    
+  def scrap_info_details
+    
+  
 
- 
- 
- 
  
   
  #player = {}
