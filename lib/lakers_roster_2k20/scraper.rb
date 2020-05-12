@@ -17,7 +17,7 @@ class LakersRoster2k20::Scraper
       
       info.each do |i|
         info_title = i.text
-        LakersRoster2k20::Info.new(info_title, player, url)
+        LakersRoster2k20::Info.new(info_title, player)
       end
     end
     
