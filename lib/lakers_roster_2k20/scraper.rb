@@ -17,6 +17,7 @@ class LakersRoster2k20::Scraper
       info = doc.css("tbody td") 
       info.each do |i|
         info_title = i.text
+      LakersRoster2k20::Player.new(name)
       end
     end
   end

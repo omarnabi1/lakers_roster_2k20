@@ -42,24 +42,12 @@ class LakersRoster2k20::CLI
     player = @players[chosen_player - 1]
     player.get_info
     puts "Here is more about your favorite Laker, #{player.name}!"
-    player.bio.each.with_index(1) do |bio, idx|
+    player.get_info.each.with_index(1) do |bio, idx|
       puts "#{idx}. #{bio.name}"
     end
-    get_user_info(player)
+    #get_info(player)
   end
   
-  def get_user_info(player)
-    puts "Choose what info you would like to know about your favorite Laker!"
-    input = gets.strip
-    info = player.info[input.to_i -1]
-    info.get_info_details
-    show_info_details(info)
-  end
-  
-  def show_info_details(info)
-    puts info.name 
-    info.jersey_number.each {|i| puts "-#{i}"}
-  end
   
   def what_next
     puts "Done? Type 'exit' to exit or hit any key to see more info."
