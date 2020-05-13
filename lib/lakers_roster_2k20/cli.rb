@@ -17,7 +17,13 @@ class LakersRoster2k20::CLI
   end
 
   def show_roster
-    puts "\nChoose a Laker to learn more about them!.\n"
+    puts "\nChoose a Laker to see their...:\n"
+    puts " - Jersey Number"
+    puts " - Position"
+    puts " - Age"
+    puts " - Height"
+    puts " - Weight"
+    puts " - College/Country"
     @players.each.with_index do  |player, index|
       puts "#{index + 1}.#{player.name}"
     end
