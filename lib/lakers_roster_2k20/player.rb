@@ -1,10 +1,10 @@
 class LakersRoster2k20::Player
-attr_accessor :name, :events
+attr_accessor :name, :info
 @@all = []
 
   def initialize(name) 
     @name = name 
-    @info = [ ]
+    @info = []
     save
   end
   
