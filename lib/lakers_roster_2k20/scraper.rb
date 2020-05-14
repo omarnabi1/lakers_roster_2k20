@@ -14,10 +14,10 @@ class LakersRoster2k20::Scraper
   def self.scrape_info(player)
     doc = Nokogiri::HTML(open("https://lakersnation.com/los-angeles-lakers-roster/"))
   
-      info = doc.css("tbody") 
+      info = doc.css("td") 
       info.each do |i|
-        i = [ ]
-        puts info.text.strip
+       # i = [ ]
+        info.text.strip
       end
     end
   end
