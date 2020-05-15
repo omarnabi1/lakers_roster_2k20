@@ -17,7 +17,7 @@ class LakersRoster2k20::Scraper
       info = doc.css("tr td") 
       
       info.each do |i|
-        i.text.strip
+       puts  i.text.strip
       end
     end
   end
