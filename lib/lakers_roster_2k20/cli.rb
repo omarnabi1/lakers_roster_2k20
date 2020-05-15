@@ -43,7 +43,7 @@ class LakersRoster2k20::CLI
     player = @players[chosen_player - 1]
     puts "Here is more about your favorite Laker, #{player.name}!"
     player.get_info.each.with_index(1) do |bio, idx|
-      puts "#{idx}. #{bio.name}"
+      #puts "#{idx}. #{bio.name}"
     end
     #get_info(player)
   end
