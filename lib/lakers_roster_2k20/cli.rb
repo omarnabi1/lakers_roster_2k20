@@ -50,7 +50,7 @@ class LakersRoster2k20::CLI
   
   
   def what_next
-    puts "Done? Type 'exit' to exit or hit any key to see more info."
+    puts "Done? Type 'exit' to exit or hit any key to pick another player."
     @input = gets.strip
   end
   
