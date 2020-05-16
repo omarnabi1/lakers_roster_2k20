@@ -4,7 +4,6 @@ attr_accessor :name, :info
 
   def initialize(name) 
     @name = name 
-    @info = []
     save
   end
   
@@ -14,7 +13,7 @@ attr_accessor :name, :info
   end
   
   def get_info
-    LakersRoster2k20::Scraper.scrape_info(self) if @info.empty?
+    LakersRoster2k20::Scraper.scrape_info(self)
   end
   
   def save
