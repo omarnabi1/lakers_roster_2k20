@@ -26,7 +26,7 @@ class LakersRoster2k20::CLI
     puts " - College/Country"
     puts " "
     @players.each.with_index do  |player, index|
-      puts "#{index + 1}.#{player.name}"
+      puts "#{index + 1}.#{player.name}" unless index == @players.length - 1 
     end
   end
   
