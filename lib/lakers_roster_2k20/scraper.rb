@@ -16,7 +16,7 @@ class LakersRoster2k20::Scraper
   
       rows = doc.css("tr") 
       
-      cols = ["Number", "Name", "Position", "Age", "Height", "Weight", "College/Country"]
+      cols = ["Jersey Number", "Name", "Position", "Age", "Height", "Weight", "College/Country"]
       rows.each do |row|
         if row.css(".column-2").text == player.name 
           row.css("td").each_with_index do |data, i|
