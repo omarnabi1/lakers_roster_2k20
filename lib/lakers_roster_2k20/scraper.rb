@@ -28,19 +28,6 @@ class LakersRoster2k20::Scraper
   end
   
     
-  
 
- 
-  
- #player = {}
- #
- #player[:height] = doc.search("span.PlayerCard").text
- #player[:position] = 
- #player[:date_of_birth] = 
- #player[:years_pro] = 
- #player[:weight] = 
- #player[:from] = 
-  
-  
   
   
