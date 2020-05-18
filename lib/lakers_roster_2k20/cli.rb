@@ -17,7 +17,7 @@ class LakersRoster2k20::CLI
   end
 
   def show_roster
-    puts "\nChoose a Laker to see their...\n"
+    puts "\nPick a Laker to see their...\n"
     puts "\n - Jersey Number\n"
     puts " - Position"
     puts " - Age"
