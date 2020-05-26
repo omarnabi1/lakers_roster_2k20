@@ -52,7 +52,7 @@ class LakersRoster2k20::CLI
   end
   
   def goodbye
-    puts "See you agian! Go Lakers!"
+    puts "See you again! Go Lakers!"
   end
 end
 
