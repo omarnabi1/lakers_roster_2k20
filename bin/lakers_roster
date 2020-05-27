@@ -3,3 +3,5 @@
 require_relative '../lib/lakers_roster_2k20'
 
 LakersRoster2k20::CLI.new.call
+
+#run or executable file. When user calls up this runs first
