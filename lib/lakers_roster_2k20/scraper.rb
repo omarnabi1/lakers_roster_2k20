@@ -4,7 +4,7 @@ class LakersRoster2k20::Scraper
 
     players = roster.css("td.column-2")
     
-    players.each do |p|
+    players.collect do |p|
       name = p.text
       LakersRoster2k20::Player.new(name)
     end
@@ -20,7 +20,8 @@ class LakersRoster2k20::Scraper
       rows.each do |row|
         if row.css(".column-2").text == player.name 
           row.css("td").each_with_index do |data, i|
-            puts "#{cols[i]}: #{data.text}"
+            #puts "#{cols[i]}: #{data.text}"
+            player.send("#{cols[i]}=", data.text)
           end
         end
       end

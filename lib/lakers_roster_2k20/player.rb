@@ -1,6 +1,7 @@
 class LakersRoster2k20::Player
-attr_accessor :name
+attr_accessor :name, :jersey_number, :position, :age, :height, :weight, :college_country
 @@all = []
+
 
   def initialize(name) 
     @name = name 
